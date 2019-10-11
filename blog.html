@@ -13,6 +13,9 @@
     <!-- font awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
 
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,700,900&display=swap&subset=chinese-traditional" rel="stylesheet">
+
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -24,10 +27,17 @@
     <!-- mobile pushy menu -->
     <nav class="pushy pushy-left">
         <div class="pushy-content">
+            <div class="border-bottom mb-2 p-3">
+                <img src="./img/logo.jpg" class="img-fluid" alt="brand-logo">
+            </div>
             <ul class="list-unstyled text-center">
-                <li class="pushy-link"><a href="index.html">Home</a></li>
-                <li class="pushy-link"><a href="about.html">About</a></li>
-                <li class="pushy-link"><a href="blog.html">Blog</a></li>
+                <li class="pushy-link"><a href="index.html">主頁</a></li>
+                <li class="pushy-link"><a href="about.html">關於我們</a></li>
+                <li class="pushy-link"><a href="#">醫生介紹</a></li>
+                <li class="pushy-link"><a href="#">專業服務</a></li>
+                <li class="pushy-link"><a href="#">醫療資訊</a></li>
+                <li class="pushy-link"><a href="#">傳媒報道</a></li>
+                <li class="pushy-link"><a href="#">查詢及預約</a></li>
             </ul>
         </div>
     </nav>
@@ -35,79 +45,89 @@
     <!-- site overlay -->
     <div class="site-overlay"></div>
 
-    <!-- your content -->
+    <!-- content -->
     <div id="container">
 
         <!-- app preheader -->
         <section id="app-pre-header">
-                <nav class="my-logo navbar navbar-expand-lg d-none d-sm-flex">
-                    <ul class="navbar-nav mr-auto d-none d-lg-block">
-                        <li class="nav-item mr-3">
-                            <span class="text-primary border border-primary font-weight-bold py-2 px-4 text-uppercase">Logo</span>
-                        </li>
-                    </ul>
-                    <div class="navbar-text header-contact-us-wrapper" style="width: 100%;">
-                        <!-- contact us details -->
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-12 col-sm-4">
-                                    <span class="icon-holder"><i class="fas fa-location-arrow"></i></span>
-                                    <strong>
-                                        Saint-Petersburg, <br>
-                                        Millionnaya st. 29
-                                    </strong>
-                                </div>
-                                <div class="col-12 col-sm-4">
-                                    <span class="icon-holder"><i class="fas fa-phone"></i></span>
-                                    <strong>
-                                        (+852) 0000 0000 <br>
-                                        (+852) 0000 0000
-                                    </strong>
-                                </div>
-                                <div class="col-12 col-sm-4">
-                                    <span class="icon-holder"><i class="fas fa-at"></i></span>
-                                    <strong>
-                                        mail@example.com
-                                    </strong>
-                                </div>
+            <nav class="my-logo navbar navbar-expand-lg d-none d-sm-flex">
+                <ul class="navbar-nav mr-auto d-none d-lg-block">
+                    <li class="nav-item mr-3">
+                        <img src="./img/logo.jpg" class="logo" alt="brand-logo">
+                    </li>
+                </ul>
+                <div class="navbar-text header-contact-us-wrapper" style="width: 100%;">
+                    <!-- contact us details -->
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 col-sm-4">
+                                <span class="icon-holder"><i class="fas fa-location-arrow"></i></span>
+                                <strong>
+                                    中環皇后大道中 70 號卡佛大廈 1001 室
+                                </strong>
+                            </div>
+                            <div class="col-12 col-sm-4">
+                                <span class="icon-holder"><i class="fas fa-phone"></i></span>
+                                <strong>
+                                    +852 2834 2200 <br>（敬請預約）
+                                </strong>
+                            </div>
+                            <div class="col-12 col-sm-4">
+                                <span class="icon-holder"><i class="fas fa-at"></i></span>
+                                <strong>
+                                    info@premierclinic.hk
+                                </strong>
                             </div>
                         </div>
                     </div>
-                </nav>
-
-                <!-- toggle pushy menu -->
-                <div class="border-top d-block d-lg-none">
-                    <button class="menu-btn my-menu-mobile btn">&#9776;</button>
                 </div>
-            </section>
+            </nav>
 
-            <!-- app header -->
-            <section id="app-header">
-                <nav class="my-menu navbar navbar-expand-lg navbar-dark bg-primary">
-                    <div class="collapse navbar-collapse" id="navbarToggler">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item mr-3">
-                                <a class="nav-link" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item ml-5 mr-3">
-                                <a class="nav-link" href="about.html">About</a>
-                            </li>
-                            <li class="nav-item active ml-5 mr-3">
-                                <a class="nav-link" href="blog.html">Blog <span class="sr-only">(current)</span></a>
-                            </li>
-                        </ul>
-                        <div class="social-media-icons">
-                            <a href="#" class="px-2 mx-1 border border-white-15"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="px-2 mx-1 border border-white-15"><i class="fab fa-weibo"></i></a>
-                            <a href="#" class="px-2 mx-1 border border-white-15"><i class="fab fa-weixin"></i></a>
-                            <a href="#" class="px-2 mx-1 border border-white-15 w-auto font-weight-bold">English</a>
-                        </div>
+            <!-- toggle pushy menu -->
+            <div class="py-3 border-top d-block d-lg-none">
+                <button class="menu-btn my-menu-mobile btn">&#9776;</button>
+            </div>
+        </section>
+
+        <!-- app header -->
+        <section id="app-header">
+            <nav class="my-menu navbar navbar-expand-lg navbar-dark bg-primary">
+                <div class="collapse navbar-collapse" id="navbarToggler">
+                    <ul class="navbar-nav mr-auto d-flex justify-content-between" style="width: 75%;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">主頁</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">關於我們</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">醫生介紹</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">專業服務</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">醫療資訊</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">傳媒報道</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">查詢及預約</a>
+                        </li>
+                    </ul>
+                    <div class="social-media-icons">
+                        <a href="#" class="px-2 mx-1 rounded border border-white-15"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="px-2 mx-1 rounded border border-white-15"><i class="fab fa-weibo"></i></a>
+                        <a href="#" class="px-2 mx-1 rounded border border-white-15"><i class="fab fa-weixin"></i></a>
+                        <a href="#" class="px-2 mx-1 rounded border border-white-15 w-auto font-weight-bold small">English</a>
                     </div>
-                </nav>
-            </section>
+                </div>
+            </nav>
+        </section>
 
         <!-- medical information - title-->
-        <section class="bg-light p-5">
+        <section class="bg-light border-bottom p-5">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -335,7 +355,7 @@
                 <hr class="hr-white-15">
                 <div class="row">
                     <div class="col-12 col-md-3 col-lg-3 my-3 text-center text-md-left">
-                        <span class="text-white border border-white-15 font-weight-bold py-2 px-4 text-uppercase">Logo</span>
+                        <span class="text-white border border-white-15 font-weight-bold py-2 px-4 text-uppercase rounded">Logo</span>
                     </div>
                     <div class="col-12 col-md-6 col-lg-6 my-3 text-center">
                         <ul class="list-unstyled d-flex flex-wrap justify-content-center small">
@@ -348,9 +368,9 @@
                     </div>
                     <div class="col-12 col-md-3 col-lg-3 my-3 text-center text-md-right">
                         <div class="social-media-icons">
-                            <a href="#" class="px-2 mx-1 border border-white-15"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="px-2 mx-1 border border-white-15"><i class="fab fa-weibo"></i></a>
-                            <a href="#" class="px-2 mx-1 border border-white-15"><i class="fab fa-weixin"></i></a>
+                            <a href="#" class="px-2 mx-1 border border-white-15 rounded"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="px-2 mx-1 border border-white-15 rounded"><i class="fab fa-weibo"></i></a>
+                            <a href="#" class="px-2 mx-1 border border-white-15 rounded"><i class="fab fa-weixin"></i></a>
                         </div>
                     </div>
                 </div>
