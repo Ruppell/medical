@@ -55,8 +55,16 @@ $cyan:    #17a2b8;
 // $secondary:     #c12e60;
 
 // color option d
-$primary:       #fd8a53;
-$secondary:     #a486ef;
+// $primary:       #fd8a53;
+// $secondary:     #a486ef;
+
+// color option e
+// $primary:       #fd8a53;
+// $secondary:     #a486ef;
+
+// color option f
+$primary:       #FF7276;
+$secondary:     #F2EECA;
 
 $tertiary:      $teal;
 $success:       $green;
@@ -81,6 +89,12 @@ $theme-colors: map-merge(
   ),
   $theme-colors
 );
+
+// ======================================
+// Components
+// ======================================
+
+// $border-color:                darken($secondary, 10%);
 
 // ======================================
 // Buttons

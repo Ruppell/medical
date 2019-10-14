@@ -86,8 +86,13 @@
   border-color: rgba(white, $alpha: 0.15) !important;
 }
 
-.btn {
-  color: white !important;
+// .btn {
+//   color: white !important;
+// }
+.btn-outline-primary {
+  &:hover {
+    color: white !important;
+  }
 }
 
 // ======================================
@@ -102,7 +107,7 @@
 #app-pre-header {
   .fas {
     font-size: 1.4rem;
-    color: $secondary;
+    color: $primary;
   }
 }
 
@@ -185,7 +190,6 @@
 // ======================================
 
 .information-box {
-  color: white;
   background-color: $secondary;
   padding: map-get($spacers, 5) map-get($spacers, 4);
 
