@@ -4718,6 +4718,15 @@ a.text-tertiary:hover, a.text-tertiary:focus {
     -ms-transform: translateY(-50%) rotate(90deg);
     transform: translateY(-50%) rotate(90deg); }
 
+.bg-secondary h1, .bg-secondary h2, .bg-secondary h3, .bg-secondary h4, .bg-secondary h5, .bg-secondary h6 {
+  color: #5c4975; }
+
+.bg-secondary .small, .bg-secondary .muted, .bg-secondary .list-unstyled {
+  color: #9177b3 !important; }
+
+.bg-secondary a.text-dark, .bg-secondary .font-weight-bold {
+  color: #5c4975 !important; }
+
 .mute-bg {
   position: relative; }
   .mute-bg:before {

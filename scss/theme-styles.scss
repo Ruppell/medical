@@ -45,6 +45,26 @@
 
 @import "../src/pushy/scss/pushy";
 
+
+// ======================================
+// Color helpers
+// ======================================
+
+.bg-secondary {
+  h1, h2, h3, h4, h5, h6 {
+    color: #5c4975;
+  }
+
+  .small, .muted, .list-unstyled  {
+    color: #9177b3 !important;
+  }
+
+  a.text-dark, .font-weight-bold {
+    color: #5c4975 !important;
+  }
+}
+// #8062a9
+
 // ======================================
 // Universal
 // ======================================
